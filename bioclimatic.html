@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Bioclimatic variables</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="assets/css/accord.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Bioclimatic variables</h1>
+<p>Bioclimatic variables are derived from the monthly temperature and rainfall values in order to generate more biologically meaningful variables. These are often used in species distribution modeling and related ecological modeling techniques. The bioclimatic variables represent annual trends (e.g., mean annual temperature, annual precipitation) seasonality (e.g., annual range in temperature and precipitation) and extreme or limiting environmental factors (e.g., temperature of the coldest and warmest month, and precipitation of the wet and dry quarters). A quarter is a period of three months (1/4 of the year). <br><br> They are coded as follows:</p>
+
+<ul>
+  <li>bio1 = annual mean temperature</li>
+  <li>bio2 = mean diurnal range (mean of monthly (max temp - min temp))</li>
+  <li>bio3 = isothermality (bio2/bio7)(×100)</li>
+  <li>bio4 = temperature seasonality (standard deviation x 100)</li>
+  <li>bio5 = max temperature of warmest month</li>
+  <li>bio6 = min temperature of coldest month</li>
+  <li>bio7 = temperature annual range (bio5-bio6)</li>
+  <li>bio8 = mean temperature of wettest quarter</li>
+  <li>bio9 = mean temperature of driest quarter</li>
+  <li>bio10 = mean temperature of warmest quarter</li>
+  <li>bio11 = mean temperature of coldest quarter</li>
+  <li>bio12 = annual precipitation</li>
+  <li>bio13 = precipitation of wettest month</li>
+  <li>bio14 = precipitation of driest month</li>
+  <li>bio15 = precipitation seasonality (coefficient of variation)</li>
+  <li>bio16 = precipitation of wettest quarter</li>
+  <li>bio17 = precipitation of driest quarter</li>
+  <li>bio18 = precipitation of warmest quarter</li>
+  <li>bio19 = precipitation of coldest quarter</li>
+</ul>
+
+<p>This scheme follows that of ANUCLIM, except that for temperature seasonality the standard deviation was used because a coefficient of variation does not make sense with temperatures between -1 and 1).</p>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="assets/js/script.js"></script>
+
+</body>
+</html>
